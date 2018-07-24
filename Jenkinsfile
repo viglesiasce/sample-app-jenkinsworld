@@ -1,5 +1,5 @@
 def project = 'vic-next-2018-demo'
-def  appName = 'gceme'
+def  appName = 'sample-app'
 def  imageTag = "gcr.io/${project}/${appName}:${env.BRANCH_NAME}.${env.BUILD_NUMBER}"
 
 pipeline {
