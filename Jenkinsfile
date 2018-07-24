@@ -33,7 +33,7 @@ spec:
   stages {
     stage('Run go test') {
       steps {
-        container('golang') {
+        container('test-image') {
           sh """
             ln -s `pwd` /go/src/sample-app
             cd /go/src/sample-app
