@@ -46,6 +46,7 @@ spec:
       steps {
         container('gcloud') {
           sh "PYTHONUNBUFFERED=1 gcloud container builds submit -t ${imageTag} ."
+          sh "echo \"imageTag = ${imageTag}\" > properties"
         }
       }
     }
