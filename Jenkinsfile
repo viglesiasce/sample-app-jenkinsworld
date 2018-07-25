@@ -18,7 +18,7 @@ spec:
   serviceAccountName: cd-jenkins
   containers:
   - name: test-image
-    image: gcr.io/${project}/test-image:5.0.4
+    image: gcr.io/${project}/test-image:6.0.0
     command:
     - cat
     tty: true
