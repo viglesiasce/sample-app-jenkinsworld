@@ -1,6 +1,6 @@
 def project = 'vic-next-2018-demo'
-def  appName = 'sample-app'
-def  imageTag = "gcr.io/${project}/${appName}:${env.BUILD_NUMBER}"
+def appName = 'sample-app'
+def imageTag = "gcr.io/${project}/${appName}:${env.BUILD_NUMBER}"
 
 pipeline {
   agent {
@@ -18,7 +18,7 @@ spec:
   serviceAccountName: cd-jenkins
   containers:
   - name: test-image
-    image: gcr.io/${project}/test-image:1.0.1
+    image: gcr.io/${project}/test-image:v2.0.0
     command:
     - cat
     tty: true
