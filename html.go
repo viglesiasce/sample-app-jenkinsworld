@@ -51,7 +51,7 @@ const (
 	</tr>
 	<tr>
 	  <td>ID</td>
-	  <td>{{.Id}}</td>
+	  <td>{{.ID}}</td>
 	</tr>
 	<tr>
 	  <td>Hostname</td>
