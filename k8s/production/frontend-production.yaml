@@ -4,6 +4,7 @@
     name: gceme-frontend
     namespace: production
   spec:
+    replicas: 4
     template:
       metadata:
         labels:
