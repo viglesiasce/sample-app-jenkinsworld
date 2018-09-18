@@ -29,8 +29,9 @@ import (
 	"cloud.google.com/go/compute/metadata"
 )
 
+// Instance contains the metadata elements for a GCE instance
 type Instance struct {
-	Id         string
+	ID         string
 	Name       string
 	Version    string
 	Hostname   string
@@ -159,7 +160,7 @@ func newInstance() *Instance {
 	}
 
 	a := &assigner{}
-	i.Id = a.assign(metadata.InstanceID)
+	i.ID = a.assign(metadata.InstanceID)
 	i.Zone = a.assign(metadata.Zone)
 	i.Name = a.assign(metadata.InstanceName)
 	i.Hostname = a.assign(metadata.Hostname)
