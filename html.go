@@ -91,7 +91,7 @@ const (
 	</tr>
 	<tr>
 	  <td>Request</td>
-	  <td>{{.LBRequest}}</td>
+	  <td><pre>{{.LBRequest}}</pre></td>
 	</tr>
 <tr>
   <td>Error</td>
